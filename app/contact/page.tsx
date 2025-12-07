@@ -33,18 +33,20 @@ const Contact = () => {
     const subject = `New Contact Form Message from ${firstname} ${lastname}`;
 
     const body = `
-Name: ${firstname} ${lastname}
-Email: ${email}
-Phone: ${phone}
-Service Selected: ${service}
+      Name: ${firstname} ${lastname}
+      Email: ${email}
+      Phone: ${phone}
+      Service Selected: ${service}
 
-Message:
-${message}
+      Message:
+      ${message}
     `;
 
-    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(
+    const url = `mailto:${recipient}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
+
+    window.open(url, "_blank");
   };
   const info = [
     {
