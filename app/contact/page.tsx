@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/select";
 
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [firstname, setFirstname] = useState("");
@@ -29,7 +29,7 @@ const Contact = () => {
   const handleSend = (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
-    const recipient = "praisedonatus22@gmail.com"; // your Gmail
+    const recipient = "Quickfixerrandhub@gmail.com"; // your Gmail
     const subject = `New Contact Form Message from ${firstname} ${lastname}`;
 
     const body = `
@@ -48,14 +48,9 @@ ${message}
   };
   const info = [
     {
-      icon: <FaPhoneAlt />,
-      title: "Phone",
-      description: "(+234) 707 379 1979 ",
-    },
-    {
       icon: <FaEnvelope />,
       title: "Email",
-      description: "praisedonatus22@gmail.com",
+      description: "Quickfixerrandhub@gmail.com",
     },
   ];
 
@@ -76,7 +71,7 @@ ${message}
               onSubmit={handleSend}
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
             >
-              <h3 className="text-4xl text-accent-default">
+              <h3 className="text-4xl text-blue-400">
                 {"Lets's work together"}
               </h3>
               <p className="text-white/60">
@@ -183,7 +178,7 @@ ${message}
               {info.map((item, index) => {
                 return (
                   <li key={index} className="flex items-center gap-6">
-                    <div className="h-[52px] w-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent-default rounded-md flex items-center justify-center">
+                    <div className="h-[52px] w-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-blue-400 rounded-md flex items-center justify-center">
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">

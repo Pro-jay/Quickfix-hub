@@ -64,7 +64,7 @@ const Services = () => {
                 <Link
                   href={service.href}
                   className="w-[70px] h-[70px] rounded-full
-                   bg-white group-hover:bg-accent-default transition-all duration-500 flex 
+                   bg-white group-hover:bg-blue-300 transition-all duration-500 flex 
                    justify-center items-center hover:-rotate-45 "
                 >
                   <BsArrowDownRight className="text-black text-3xl" />
@@ -73,7 +73,7 @@ const Services = () => {
               {/* titles */}
               <h2
                 className="text-[42px] font-bold leading-none text-white 
-              group-hover:text-accent-default transition-all duration-500"
+              group-hover:text-blue-300 transition-all duration-500"
               >
                 {service.title}
               </h2>

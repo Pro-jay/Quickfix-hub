@@ -10,7 +10,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h1 className="h1 mb-6">
               {"Welcome to"} <br />
-              <span className="text-accent-default">Quickfix hub</span>
+              <span className="text-cyan-600">Quickfix hub</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               your reliable helping hand for everyday chores. From cleaning to
@@ -22,8 +22,8 @@ const Home = () => {
               <div className="mb-8 xl:mb-10">
                 <Social
                   containerStyles="flex gap-6"
-                  iconStyles="w-9 h-9 border border-accent-default rounded-full flex 
-                  justify-center items-center text-accent-defaul text-base hover:bg-accent-default 
+                  iconStyles="w-9 h-9 border border-blue-400 rounded-full flex 
+                  justify-center items-center text-blue-400 text-base hover:bg-blue-200
                   hover:text-black hover:transition-all duration-500"
                 />
               </div>

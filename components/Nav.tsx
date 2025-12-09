@@ -12,10 +12,7 @@ const links = [
     name: "services",
     path: "/services",
   },
-  {
-    name: "resume",
-    path: "/resume",
-  },
+
   {
     name: "work",
     path: "/work",
@@ -23,6 +20,10 @@ const links = [
   {
     name: "contact",
     path: "/contact",
+  },
+  {
+    name: "About us",
+    path: "/resume",
   },
 ];
 
@@ -35,9 +36,8 @@ const Nav = () => {
           href={link.path}
           key={index}
           className={`${
-            link.path === pathname &&
-            "text-accent-default border-b-2 border-accent-default"
-          } capitalize font-medium hover:text-accent-default transition-all`}
+            link.path === pathname && "text-blue-400 border-b-2 border-blue-400"
+          } capitalize font-medium hover:text-blue-300 transition-all`}
         >
           {link.name}
         </Link>
