@@ -15,7 +15,7 @@ const links = [
     path: "/services",
   },
   {
-    name: "resume",
+    name: "About us",
     path: "/resume",
   },
   {

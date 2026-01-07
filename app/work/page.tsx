@@ -6,18 +6,17 @@ import { useState } from "react";
 import "swiper/css";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+// import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+// import {
+//   Tooltip,
+//   TooltipContent,
+//   TooltipProvider,
+//   TooltipTrigger,
+// } from "@/components/ui/tooltip";
 
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 import Image from "next/image";
-import Link from "next/link";
 
 const projects = [
   {
@@ -25,30 +24,33 @@ const projects = [
     category: "personal",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, quisquam. Temporibus dolor iure porro dolorem, officia illo!",
-    stack: [{ name: "html 5" }, { name: "css 3" }, { name: "javascript" }],
+      "Our Personal Errands Services are designed to support busy individuals, working professionals",
+    stack: [
+      { name: "Pharmacy runs" },
+      { name: "Bill payment" },
+      { name: "Dry cleaning pick/drop off" },
+    ],
     Image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
   },
   {
     num: "02",
     category: "household",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, quisquam. Temporibus dolor iure porro dolorem, officia illo!",
-    stack: [{ name: "next.js" }, { name: "Tailwind css" }, { name: "node.js" }],
+      "Our Household Errands Services focus on helping clients maintain smooth, organized, and well-managed home routines",
+    stack: [
+      { name: "light home organization " },
+      { name: "restocking household supplies" },
+    ],
     Image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
   },
   {
     num: "03",
     category: "business and office",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, quisquam. Temporibus dolor iure porro dolorem, officia illo!",
-    stack: [{ name: "next.js" }, { name: "Tailwind css" }],
+      "Our Business and Office Errands Services are tailored to support companies, small businesses, and professionals by managing routine tasks that enhance workplace efficiency.",
+    stack: [{ name: "mail handling" }, { name: "vendor coordination" }],
     Image: "/assets/work/thumb3.png",
     live: "",
     github: "",
@@ -109,40 +111,7 @@ const Work = () => {
               {/* border */}
               <div className="border border-white/20"></div>
               {/* buttons */}
-              <div className="flex items-center gap-4">
-                {/* live project button */}
-                <Link href={project.live}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight
-                          className="text-white text-3xl
-                         group-hover:text-accent-default"
-                        />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-                {/* github project button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub
-                          className="text-white text-3xl
-                         group-hover:text-accent-default"
-                        />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-              </div>
+              <div className="flex items-center gap-4"></div>
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
