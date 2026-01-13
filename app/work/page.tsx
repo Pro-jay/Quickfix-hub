@@ -6,15 +6,6 @@ import { useState } from "react";
 import "swiper/css";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 
-// import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-
-// import {
-//   Tooltip,
-//   TooltipContent,
-//   TooltipProvider,
-//   TooltipTrigger,
-// } from "@/components/ui/tooltip";
-
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 import Image from "next/image";
 
