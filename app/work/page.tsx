@@ -52,8 +52,6 @@ const projects = [
       "Our Business and Office Errands Services are tailored to support companies, small businesses, and professionals by managing routine tasks that enhance workplace efficiency.",
     stack: [{ name: "mail handling" }, { name: "vendor coordination" }],
     Image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
   },
 ];
 
