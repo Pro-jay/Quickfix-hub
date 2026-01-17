@@ -21,7 +21,7 @@ const projects = [
       { name: "Bill payment" },
       { name: "Dry cleaning pick/drop off" },
     ],
-    Image: "/assets/work/thumb1.png",
+    Image: "/assets/work/1.png",
   },
   {
     num: "02",
@@ -33,7 +33,7 @@ const projects = [
       { name: "light home organization " },
       { name: "restocking household supplies" },
     ],
-    Image: "/assets/work/thumb2.png",
+    Image: "/assets/work/3.png",
   },
   {
     num: "03",
@@ -42,7 +42,7 @@ const projects = [
     description:
       "Our Business and Office Errands Services are tailored to support companies, small businesses, and professionals by managing routine tasks that enhance workplace efficiency.",
     stack: [{ name: "mail handling" }, { name: "vendor coordination" }],
-    Image: "/assets/work/thumb3.png",
+    Image: "/assets/work/2.png",
   },
 ];
 
@@ -121,7 +121,7 @@ const Work = () => {
                         <Image
                           src={project.Image}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                           alt=""
                         />
                       </div>

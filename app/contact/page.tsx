@@ -45,12 +45,22 @@ ${message}
     window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
+    setFirstname("");
+    setLastname("");
+    setEmail("");
+    setPhone("");
+    setService("");
+    setMessage("");
   };
   const info = [
     {
       icon: <FaEnvelope />,
       title: "Email",
-      description: "Quickfixerrandhub@gmail.com",
+      description: (
+        <span className="break-all sm:break-normal">
+          Quickfixerrandhub@gmail.com
+        </span>
+      ),
     },
   ];
 
@@ -106,7 +116,10 @@ ${message}
                 />
               </div>
               {/* select */}
-              <Select onValueChange={(value) => setService(value)}>
+              <Select
+                onValueChange={(value) => setService(value)}
+                value={service}
+              >
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
